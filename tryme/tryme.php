@@ -29,8 +29,8 @@
 	</section>
 </div>	
 
-<script src="https://103.101.16.250:9090/geely_golive/plugins/jquery/jquery.min.js"></script> 
-<script src="https://103.101.16.250:9090/geely_golive/plugins/jquery-ui/jquery-ui.min.js"></script> 
+<script src="http://103.101.16.250:9090/geely_golive/plugins/jquery/jquery.min.js"></script> 
+<script src="http://103.101.16.250:9090/geely_golive/plugins/jquery-ui/jquery-ui.min.js"></script> 
 
 <script>
 	$(function() {
@@ -40,7 +40,7 @@
     function getAll(){
 		$("#myTable").find("tbody").find("tr").remove();
 		$.ajax({
-			url: "https://103.101.16.250:9090/geely_golive/tryme_api.php"
+			url: "http://103.101.16.250:9090/geely_golive/tryme_api.php"
 		}).done(function(data) {
 			$.each(data.records, function(i, v) {
 				$("#myTable").find("tbody")
